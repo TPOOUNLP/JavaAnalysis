@@ -1,0 +1,4 @@
+enumerating
+report 
+
+	^self subclassResponsibility 
