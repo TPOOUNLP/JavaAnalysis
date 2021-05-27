@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JuanMazza 5/25/2021 20:05",
+	"super" : "JCodeSmellDetector",
+	"category" : "JavaAnalysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"maxParameters",
+		"methodsWithParameters"
+	],
+	"name" : "JCodeSmellDetectorTooManyParameters",
+	"type" : "normal"
+}
