@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "JCodeSmellDetector",
+	"category" : "JavaAnalysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"maxLongName",
+		"methodMaxLongName"
+	],
+	"name" : "JCodeSmellDetectorTooLongName",
+	"type" : "normal"
+}
