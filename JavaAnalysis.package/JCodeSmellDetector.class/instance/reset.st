@@ -1,0 +1,4 @@
+enumerating
+reset
+
+	self subclassResponsibility 
