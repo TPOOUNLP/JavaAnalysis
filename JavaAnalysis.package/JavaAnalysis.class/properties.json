@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "JuanMazza 5/25/2021 20:06",
 	"super" : "Object",
 	"category" : "JavaAnalysis",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"javaAstCollection"
+	],
 	"name" : "JavaAnalysis",
 	"type" : "normal"
 }
