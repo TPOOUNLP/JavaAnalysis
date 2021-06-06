@@ -2,6 +2,6 @@ running
 setUp 
 	
 	super setUp.
-	detector:=JCodeSmellDetectorTooManyMethods new.
+	detector:=JCodeSmellDetectorTooManyLines new.
 	javaProject := parser parseJavaProject: './javaTestFiles'.
 	parser addDetector: detector.
