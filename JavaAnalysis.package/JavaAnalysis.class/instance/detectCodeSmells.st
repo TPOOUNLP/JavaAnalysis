@@ -6,4 +6,5 @@ detectCodeSmells
 	reports := detectors collect:[:detector |
 		detector detectCodeSmellFromCollection: javaAstCollection
 		].
-	reports:= reports select:[:rep | rep isNotNil]
+	reports:= reports select:[:rep | rep isNotEmpty].
+	^reports

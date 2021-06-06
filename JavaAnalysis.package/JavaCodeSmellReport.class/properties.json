@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JuanMazza 5/25/2021 20:05",
+	"super" : "Object",
+	"category" : "JavaAnalysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"jClass",
+		"type",
+		"jFile",
+		"content"
+	],
+	"name" : "JavaCodeSmellReport",
+	"type" : "normal"
+}
