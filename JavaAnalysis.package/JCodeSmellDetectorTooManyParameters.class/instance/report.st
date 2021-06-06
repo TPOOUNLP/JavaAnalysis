@@ -12,5 +12,5 @@ report
 		nextPutAll: ' has ';
 		nextPutAll: (method parameters size) asString;
 		nextPutAll: ' parameters.'.
-		 ].
+	].
 	^text

@@ -1,14 +1,15 @@
 {
-	"commentStamp" : "JuanMazza 5/25/2021 20:06",
-	"super" : "Object",
+	"commentStamp" : "",
+	"super" : "TestCase",
 	"category" : "JavaAnalysis",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"javaAstCollection",
-		"detectors"
+		"javaProject",
+		"detector",
+		"parser"
 	],
-	"name" : "JavaAnalysis",
+	"name" : "JCSDetectorTest",
 	"type" : "normal"
 }

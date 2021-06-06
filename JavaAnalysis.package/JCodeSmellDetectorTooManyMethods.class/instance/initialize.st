@@ -2,4 +2,4 @@ initialization
 initialize
 
 	methodCount := Set new.
-	maxMethods := 20.
+	maxMethods := 2.
