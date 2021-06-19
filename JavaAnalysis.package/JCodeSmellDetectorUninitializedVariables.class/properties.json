@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "JCodeSmellDetector",
+	"category" : "JavaAnalysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"variables"
+	],
+	"name" : "JCodeSmellDetectorUninitializedVariables",
+	"type" : "normal"
+}
