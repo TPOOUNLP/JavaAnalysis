@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"variables"
+		"variables",
+		"contextVars",
+		"unusedVars"
 	],
 	"name" : "JCodeSmellDetectorUnUsedVariables",
 	"type" : "normal"

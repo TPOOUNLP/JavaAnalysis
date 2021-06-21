@@ -1,4 +1,4 @@
 initialization
 visitAssignment: anAssignment 
 
-	variables remove:(anAssignment variable name value)
+	self removeVariable:(anAssignment variable name value)
