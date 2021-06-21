@@ -1,4 +1,6 @@
 initialization
 visitAssignment: anAssignment 
 
-	self removeVariable:(anAssignment variable name value)
+	(self isVariable: anAssignment value)
+	ifTrue:[self removeVariable: anAssignment]
+	
