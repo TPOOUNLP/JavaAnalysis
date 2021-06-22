@@ -1,4 +1,4 @@
 initialization
 visitName: aName
 
-	self removeVariable:aName value
+	self removeVariable:aName name value
