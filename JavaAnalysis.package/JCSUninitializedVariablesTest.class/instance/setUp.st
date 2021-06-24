@@ -1,7 +1,7 @@
 running
-setUp
+setUp 
 
 	super setUp.
-	detector:=JCodeSmellDetectorUnUsedVariables new.
+	detector:=JCodeSmellDetectorUninitializedVariables new.
 	parser addDetector: detector.
 	javaProject := parser parseJavaProject: './javaTestFiles'.
