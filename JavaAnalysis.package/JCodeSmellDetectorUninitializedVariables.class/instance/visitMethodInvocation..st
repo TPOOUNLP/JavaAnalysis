@@ -1,4 +1,0 @@
-generated
-visitMethodInvocation: aMethodInvocation
-	
-	

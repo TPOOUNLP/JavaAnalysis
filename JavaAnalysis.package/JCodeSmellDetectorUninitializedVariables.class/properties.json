@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"variables"
+		"variables",
+		"uninitialized",
+		"initialized",
+		"methods"
 	],
 	"name" : "JCodeSmellDetectorUninitializedVariables",
 	"type" : "normal"

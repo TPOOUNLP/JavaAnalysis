@@ -1,12 +1,9 @@
 adding
-checkVariable: aLocalVariableDecaration
-	
-	(aLocalVariableDecaration respondsTo: #equals) 
-	ifTrue: [ 
-		(aLocalVariableDecaration initializer respondsTo:#name)
-		ifTrue:[
-			self removeVariable: aLocalVariableDecaration initializer name value.
-			]
-		 ].
-		variables add:aLocalVariableDecaration variable name value
+checkVariable: aVariable
+
+	(initialized includes: aVariable)
+	ifFalse:[
+		(variables includes:aVariable)
+		ifTrue:[uninitialized add:(variables remove:aVariable)]
+	]
 	
