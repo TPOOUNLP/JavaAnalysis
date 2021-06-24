@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JCSDetectorTest",
+	"category" : "JavaAnalysis",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JCSTooUnUsedVariablesTest",
+	"type" : "normal"
+}
