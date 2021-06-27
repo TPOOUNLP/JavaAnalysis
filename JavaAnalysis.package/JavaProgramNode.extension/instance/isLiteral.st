@@ -1,0 +1,4 @@
+*JavaAnalysis
+isLiteral 
+
+	^false

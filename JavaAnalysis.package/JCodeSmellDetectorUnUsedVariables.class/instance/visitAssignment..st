@@ -1,6 +1,6 @@
 initialization
 visitAssignment: anAssignment 
 
-	(self isVariable: anAssignment value)
+	((anAssignment value) isLiteral)
 	ifTrue:[self removeVariable: anAssignment]
 	
