@@ -1,0 +1,4 @@
+*JavaAnalysis
+initializesVariable
+
+	^true

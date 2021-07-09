@@ -2,9 +2,11 @@ detection
 detectCodeSmells
 
 	|reports|
-
-	reports := detectors collect:[:detector |
-		detector detectCodeSmellFromCollection: javaAstCollection
+	
+	reports:= Set new.
+	detectors do:[:detector |
+		reports addAll:(detector detectCodeSmellFromCollection: javaAstCollection)
 		].
-	reports:= reports select:[:rep | rep isNotEmpty].
+	reports:= reports select:[:rep | (rep contents) isNotEmpty].
+	self saveReports: reports.
 	^reports

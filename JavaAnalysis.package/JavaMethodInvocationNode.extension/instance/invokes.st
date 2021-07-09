@@ -1,0 +1,4 @@
+*JavaAnalysis
+invokes
+
+	^true

@@ -1,9 +1,9 @@
 adding
 checkVariableDeclaration: aVariableDeclaration
 	
-	(aVariableDeclaration respondsTo: #equals) 
+	(aVariableDeclaration initializesVariable) 
 	ifTrue: [ 
-		(aVariableDeclaration initializer respondsTo:#name)
+		(aVariableDeclaration initializer isLiteral)
 		ifTrue:[
 			self checkVariable: aVariableDeclaration initializer name value.
 			]

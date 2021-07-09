@@ -1,5 +1,5 @@
 initialization
 initialize 
 
-	maxLines:=10.
+	maxLines:=5.
 	methodMaxLines := Set new.

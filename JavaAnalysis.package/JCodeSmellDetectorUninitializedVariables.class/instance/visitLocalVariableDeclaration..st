@@ -1,18 +1,19 @@
 generated
 visitLocalVariableDeclaration: aLocalVariableDeclaration
 
-	
 	aLocalVariableDeclaration variableDeclarations do:[:var | 
-		(var respondsTo:#equals) 
+		(var initializesVariable)
 		ifTrue: [
-			(self isVariable:var value)
-			ifTrue: [ 
-				self checkVariable:var value name value.
-			].
-			(var initializer respondsTo:#arguments)
-			ifTrue:[
-				var initializer expressions do:[:exp | self checkVariable: exp]
+			(var initializer isLiteral)
+			ifFalse: [
+				(var initializer invokes)
+				ifTrue:[
+					var initializer expressions do:[:exp | self checkVariable: exp name value]
+				]
+				ifFalse:[		
+					self checkVariable:var initializer name value.
 				].
+			].
 			initialized add:var variable name value.
 		].
 		((variables includes:var variable name value) or: (initialized includes:var variable name value))
