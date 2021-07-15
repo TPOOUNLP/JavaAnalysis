@@ -3,7 +3,7 @@ saveReports:aReportCollection
 
 	|file|
 	
-	file:=(((Date today) asString),'.txt') asFileReference writeStream.
+	file:=(((Date today) asString),'.log') asFileReference writeStream.
 	(aReportCollection isEmpty)
 	ifTrue:[
 		file nextPutAll:'No code smells detected. Good job!'

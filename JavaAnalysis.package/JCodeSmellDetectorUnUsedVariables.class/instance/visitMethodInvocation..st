@@ -3,7 +3,7 @@ visitMethodInvocation: aMethodInvocation
 
 	|vars|
 
-	vars:=aMethodInvocation expressions select: [ :each | self isVariable:each ].
+	vars:=aMethodInvocation expressions reject: [ :each | each isLiteral ].
 	vars do:[:var | 
 		self removeVariable:var name value.
 		].
