@@ -1,7 +1,7 @@
 initialization
 visitMethodDeclaration: aMethodDeclaration
 
-(aMethodDeclaration body statements size > maxLines)
+((self methodSize: aMethodDeclaration) > maxLines)
 	ifTrue:[
 		methodMaxLines add: aMethodDeclaration 
 		].

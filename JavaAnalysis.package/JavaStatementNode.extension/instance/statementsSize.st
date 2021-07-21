@@ -1,0 +1,4 @@
+*JavaAnalysis
+statementsSize
+
+	^1
