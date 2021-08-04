@@ -18,7 +18,6 @@ parseJavaProject: aProject
 			JavaProgramNode new.
 			failed add: text.
 			].
-		parsed filename: file fullName.
 		jAst add: parsed
 		]).
 	

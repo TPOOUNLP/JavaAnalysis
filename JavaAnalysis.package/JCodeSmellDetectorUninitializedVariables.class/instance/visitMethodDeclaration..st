@@ -2,10 +2,13 @@ generated
 visitMethodDeclaration: aMethodDeclaration
 
 	self visitDeclaration: aMethodDeclaration.
-	uninitialized addAll:variables.
-	methods at:(aMethodDeclaration declarator name value) put:(Set withAll:uninitialized).
-	variables removeAll.
-	initialized removeAll.
-	uninitialized removeAll.
+	(variables isNotEmpty)
+	ifTrue:[
+		uninitialized addAll:variables.
+		methods at:(aMethodDeclaration declarator name value) put:(Set withAll:uninitialized).
+		uninitialized removeAll.
+		initialized removeAll.
+		variables removeAll.
+	].
 	
 	

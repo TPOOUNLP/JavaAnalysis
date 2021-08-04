@@ -5,7 +5,7 @@ visitLocalVariableDeclaration: aLocalVariableDeclaration
 		(var initializesVariable)
 		ifTrue: [
 			(var initializer isLiteral)
-			ifFalse: [
+			ifTrue: [
 				(var initializer invokes)
 				ifTrue:[
 					var initializer expressions do:[:exp | self checkVariable: exp name value]

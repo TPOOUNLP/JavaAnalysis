@@ -1,9 +1,9 @@
 adding
 checkVariable: aLocalVariableDecaration
 	
-	(aLocalVariableDecaration respondsTo: #equals) 
+	(aLocalVariableDecaration initializesVariable) 
 	ifTrue: [ 
-		(aLocalVariableDecaration initializer respondsTo:#name)
+		(aLocalVariableDecaration initializer isLiteral)
 		ifTrue:[
 			(variables includes: (aLocalVariableDecaration initializer name value))
 			ifTrue:[

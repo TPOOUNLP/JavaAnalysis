@@ -2,7 +2,6 @@ initialization
 report
 |text|
 	text := WriteStream on: ''.
-	
 	methods  associationsDo: [ :pos |
 			text nextPutAll: ' Method name:';
 			nextPutAll: pos key;
