@@ -14,7 +14,9 @@ https://github.com/j-brant/SmaCC
 
 1. Install SmaCC by j-brant via iceberg
 
-2. Download 
+2. Download JavaAnalysis
+
+3. Load the JavaAnalysis package
 
 ## How to use 
 
